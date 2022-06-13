@@ -9,10 +9,10 @@ import CityNameInput from './CityNameInput';
 import City from './City';
 
 function App() {
-  const [skylineId, setSkyLineId] = useState('');
-  const [waterFrontId, setWaterFrontId] = useState('');
-  const [castleId, setCastleId] = useState('');
-  const [cityName, setCityName] = useState('');
+  const [skylineId, setSkyLineId] = useState('skyline-1');
+  const [waterFrontId, setWaterFrontId] = useState('waterfront-1');
+  const [castleId, setCastleId] = useState('castle-1');
+  const [cityName, setCityName] = useState('city');
   const [slogans, setSlogans] = useState(['The City of Excellence']);
   const [sloganForm, setSloganForm] = ('');
   // track some state here.
@@ -30,6 +30,31 @@ function App() {
       <div className='bottom'>
         {/* here, the CityNameInput component takes in the setCityName state handler function */}
         <section className='dropdowns'>
+          <label>
+            Skyline
+            <select>
+              <option>Skyline 1</option>
+              <option>Skyline 2</option>
+              <option>Skyline 3</option>
+            </select>
+          </label>
+          <label>
+            Waterfront
+            <select>
+              <option>Waterfront 1</option>
+              <option>Waterfront 2</option>
+              <option>Waterfront 3</option>
+            </select>
+          </label>
+          <label>
+            Castle
+            <select>
+              <option>Castle 1</option>
+              <option>Castle 2</option>
+              <option>Castle 3</option>
+            </select>
+          </label>
+          
           {/* 
           render all three Dropdown components (WaterfrontDropdown, SkylineDropdown, CastleDropdown) here. 
           
