@@ -9,10 +9,13 @@ import CityNameInput from './CityNameInput';
 import City from './City';
 
 function App() {
-  // track some state here.
   const [skylineId, setSkyLineId] = useState('');
   const [waterFrontId, setWaterFrontId] = useState('');
   const [castleId, setCastleId] = useState('');
+  const [cityName, setCityName] = useState('');
+  const [slogans, setSlogans] = useState(['The City of Excellence']);
+  const [sloganForm, setSloganForm] = ('');
+  // track some state here.
   // You'll need to keep track of a skylineId, waterfrontId, and castleId. All these start out as 1
   // you'll need to track a city name, which starts as the city name of your choice.
   // finally, you'll need an array of slogans, which could start out as ['The City of Excellence'] for example
