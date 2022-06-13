@@ -25,7 +25,7 @@ function App() {
         Welcome to beautiful Portland! {cityName}
       </h1>
       <div className='bottom'>
-        <CityNameInput />
+        <CityNameInput setCityName={setCityName}/>
         {/* here, the CityNameInput component takes in the setCityName state handler function */}
         <section className='dropdowns'>
           <div>
@@ -34,8 +34,8 @@ function App() {
             <CastleDropdown setCastleId={setCastleId} />
           </div>
         </section>
-        <SloganForm />
-        <SloganList SloganList={SloganList}/>
+        <SloganForm setSloganList={setSloganList}/>
+        <SloganList sloganList />
         {/* here, the SloganForm component takes in the setSlogans state handler function and the slogans array that live in state */}
         {/* here, the SloganList component takes the array of slogans that lives in state */}
 
