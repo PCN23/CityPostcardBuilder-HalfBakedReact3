@@ -14,7 +14,6 @@ function App() {
   const [castleId, setCastleId] = useState('1');
   const [cityName, setCityName] = useState('Portland');
   const [sloganList, setSloganList] = useState(['The City of Excellence']);
-  console.log(sloganList);
  
   
   return (
